@@ -1,0 +1,74 @@
+ Exp – 4 
+
+
+Q1>
+
+echo Enter a number 
+read number
+fact=1 
+for (( i = 1; i <= number; i++ ))
+do
+fact=$((fact*i))
+done 
+echo Factorial of $number is $fact  
+
+
+  Q2> 
+
+echo"Enter a number :" 
+read num
+sum=0;
+while [$num-gt0] 
+do 
+digit=$((num%10)) 
+sum=$((sum+digit)) 
+num=$((num/10))
+done 
+echo"sum of digit is$sum"   
+
+
+  Q3>
+
+echo"Enter the first number :"
+read num
+sum=0;
+ if [$num-gt0];then 
+echo"The number is positive"
+elif[$num-lt0];then
+echo"The number is negative" 
+else 
+echo"The number is zero"
+fi   
+
+
+  Q4> 
+echoEnterthe first number
+read num1 
+echoEnterthe second numbe
+r read num2
+if [$num1-gt$num2] 
+then 
+echo$num1is greaterthan$num2 
+else
+echo$num2is greaterthan$num1 
+fi  
+
+
+  Q5>
+
+echoEnter month number 
+readmonth_name 
+case$month_namein 1) echo January;; 
+2) echo February;; 
+3) echoMarch ;; 
+4) echoApril;; 
+5) echoMay ;; 
+6) echo June;; 
+7) echo July;; 
+8) echoAugust ;;
+ 9) echoSeptember ;; 
+10)echoOctober ;; 
+11)echoNovember;; 
+12)echoDecember ;; 
+*) echo Enter validmonth number;; 
+esac 
